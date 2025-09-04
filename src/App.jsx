@@ -9,6 +9,7 @@ import EasterEggs from "./components/EasterEggs";
 export default function App() {
   return (
     <Router>
+--header-height: 70px; /* можно подгонять */
       <EasterEggs /> {/* пасхалки поверх всего */}
       <Routes>
         <Route path="/" element={<HomePage />} />

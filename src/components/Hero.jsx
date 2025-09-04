@@ -7,8 +7,9 @@ export default function Hero() {
 
   return (
     <section
-      className="relative w-full flex flex-col md:flex-row items-center px-4 md:px-16 py-12 md:py-20 gap-8 bg-gray-50"
-      style={{ marginTop: "80px" }}
+      className="relative w-full flex flex-col md:flex-row items-center px-4 md:px-16 py-12 md:py-10 gap-8 bg-gray-50"
+      style={{ marginTop: "10px" }}
+
     >
       <div className="md:w-1/2">
         <img

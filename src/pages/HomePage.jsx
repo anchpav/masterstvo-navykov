@@ -43,7 +43,7 @@ export default function HomePage() {
       <Hero />
 
       {/* Обо мне */}
-      <section id="about" className="max-w-4xl mx-auto my-16 text-center px-4">
+      <section id="about" className="max-w-4xl mx-auto my-8 text-center px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-4">Обо мне</h2>
         <p className="text-gray-700 text-lg md:text-xl">
           Привет! Я Любовь Авгушевич — мастер навыков и проводник в мир продуктивности...
