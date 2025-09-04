@@ -1,15 +1,15 @@
 @echo off
-REM Перейти в папку проекта
+REM Navigate to the project folder
 cd /d "D:\site\habits-workshop"
 
-REM Добавляем все изменения
+REM Stage all changes
 git add .
 
-REM Коммит с текущей датой и временем
-git commit -m "Обновление сайта %date% %time%"
+REM Commit with the current date and time
+git commit -m "Site update %date% %time%"
 
-REM Пуш в ветку main
+REM Push to the main branch
 git push origin main
 
-echo Обновление отправлено на GitHub!
+echo Update has been sent to GitHub!
 pause
