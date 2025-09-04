@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Небольшие утилиты под «референсный» вид */
+html, body, #root {
+  height: 100%;
+}
