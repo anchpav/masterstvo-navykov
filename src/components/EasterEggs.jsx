@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 
 export default function EasterEggs() {
@@ -9,7 +9,7 @@ export default function EasterEggs() {
     const keysPressed = [];
     const handleKeyDown = (e) => {
       keysPressed.push(e.key.toLowerCase());
-      if (keysPressed.slice(-3).join('') === 'krk') { // пример комбинации K-R-K
+      if (keysPressed.slice(-3).join("") === "krk") { // комбинация K-R-K
         setShowEgg(true);
         setTimeout(() => setShowEgg(false), 3000);
       }
@@ -18,7 +18,7 @@ export default function EasterEggs() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  // Конфетти (можно вызвать при отправке формы)
+  // Конфетти
   const triggerConfetti = () => {
     confetti({
       particleCount: 50,
@@ -37,15 +37,16 @@ export default function EasterEggs() {
       )}
 
       <img
-        src="/rick.png" // положи картинку Рика в public/rick.png
+        src="/rick1.png" // положи картинку Рика в public/rick1.png
         alt="Рик"
         className="fixed bottom-4 right-4 w-12 h-12 animate-bounce cursor-pointer opacity-70 hover:opacity-100 z-50"
         onClick={() => alert("Привет из мультивселенной! 🌀")}
       />
 
-      <div id="easter-helpers" style={{ display: "none" }}>
-        <button onClick={triggerConfetti} id="trigger-confetti" />
-      </div>
+      <button
+        onClick={triggerConfetti}
+        className="hidden"
+      />
     </>
   );
 }

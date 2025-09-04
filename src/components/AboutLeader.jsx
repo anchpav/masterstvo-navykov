@@ -1,13 +1,17 @@
 import React from "react";
+import leaderPhoto from "../assets/images/myphoto.jpg"; // путь к твоему фото
 
 export default function AboutLeader() {
   return (
     <section className="max-w-6xl mx-auto my-16 px-4 flex flex-col md:flex-row items-center gap-8">
-      <img
-        src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80"
-        alt="Любовь Авгушевич"
-        className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg"
-      />
+     <img 
+  src={leaderPhoto} 
+  alt="Лидер" 
+  className="w-36 h-36 md:w-48 md:h-48 object-cover rounded-full shadow-lg" 
+/>
+
+
+
       <div className="text-gray-700">
         <h2 className="text-3xl font-semibold mb-4">О ведущем</h2>
         <p className="text-lg leading-relaxed">
